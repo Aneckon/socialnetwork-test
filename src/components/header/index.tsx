@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
@@ -59,6 +59,10 @@ export const Header = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const handleLanguages = (lan: string) => {
+    i18next.changeLanguage(lan);
   };
 
   const handleLogout = (name: string) => {
@@ -165,15 +169,14 @@ export const Header = () => {
             ))}
           </Box>
 
-          <Box sx={{ mr: 1 }}>
+          <Box sx={{ mr: 5 }}>
             {languages.map((item) => (
-              <NavLink
-                onClick={() => i18next.changeLanguage(item.lan)}
-                style={{ marginRight: 15 }}
+              <Button
+                onClick={() => handleLanguages(item.lan)}
                 key={item.name}
-                to={item.link}>
+                style={{ color: '#fff', minWidth: 20 }}>
                 {t(item.name)}
-              </NavLink>
+              </Button>
             ))}
           </Box>
 
