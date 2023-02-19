@@ -1,0 +1,17 @@
+{
+  "Home": "Home",
+  "News": "News",
+  "Ukr": "Ukr",
+  "Eng": "Eng",
+  "Profile": "Profile",
+  "Logout": "Logout",
+  "Lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt, exercitationem iure, placeat et aperiam sint aliquid ab reiciendis doloribus necessitatibus voluptatibus vel, velit veritatis temporibus ad officia qui sit.",
+  "Loading": "Loading",
+  "ButtonLoading": "loading 10 posts",
+  "Login": "Login",
+  "UserName": "UserName",
+  "Password": "Password",
+  "ToastLogout": "Successfully exited",
+  "ToastDeletePostSuccessfully": "Deleted successfully",
+  "ToastDeletePostError": "To delete, you need to log in to your account"
+}

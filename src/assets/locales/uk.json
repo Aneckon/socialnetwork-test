@@ -1,0 +1,17 @@
+{
+  "Home": "Головна",
+  "News": "Новини",
+  "Ukr": "Укр",
+  "Eng": "Анг",
+  "Profile": "Профіль",
+  "Logout": "Вийти",
+  "Lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nesciunt, exercitationem iure, placeat et aperiam sint aliquid ab reiciendis doloribus necessitatibus voluptatibus vel, velit veritatis temporibus ad officia qui sit.",
+  "Loading": "Загрузка",
+  "ButtonLoading": "Загрузити 10 постів",
+  "Login": "Логін",
+  "UserName": "Нікнейм",
+  "Password": "Пароль",
+  "ToastLogout": "Успішно вийшли",
+  "ToastDeletePostSuccessfully": "Успішно видалено",
+  "ToastDeletePostError": "Щоб видалити, треба зайти в акаунт"
+}
