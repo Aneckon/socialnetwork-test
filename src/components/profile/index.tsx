@@ -8,7 +8,7 @@ export const Profile = () => {
 
   React.useEffect(() => {
     if (!localStorage.getItem('user')) {
-      navigate(`/${i18next.language}/login`);
+      navigate('/login');
     }
   }, [localStorage]);
 

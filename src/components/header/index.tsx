@@ -131,7 +131,7 @@ export const Header = () => {
                 display: { xs: 'block', md: 'none' },
               }}>
               {pages.map((page) => (
-                <NavLink key={page.name} to={`${i18next.language}${page.link}`}>
+                <NavLink key={page.name} to={page.link}>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{t(page.name)}</Typography>
                   </MenuItem>
@@ -159,7 +159,7 @@ export const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <NavLink key={page.name} to={`${i18next.language}${page.link}`}>
+              <NavLink key={page.name} to={page.link}>
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}>
@@ -205,7 +205,7 @@ export const Header = () => {
                 <NavLink
                   onClick={() => handleLogout(setting.name)}
                   key={setting.name}
-                  to={`${i18next.language}${setting.link}`}>
+                  to={setting.link}>
                   <MenuItem onClick={handleCloseUserMenu}>
                     <Typography textAlign="center">{t(setting.name)}</Typography>
                   </MenuItem>
