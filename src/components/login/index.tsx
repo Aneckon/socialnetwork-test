@@ -60,11 +60,7 @@ export const Login = () => {
     <Container sx={{ textAlign: 'center', width: 320 }} maxWidth="xl">
       <h1>{t('Login')}</h1>
       <form onSubmit={submitLogin} style={{ display: 'flex', flexDirection: 'column' }}>
-        {passwordError && nameError ? (
-          <p style={{ color: 'red' }}>Ім'я користувача або пароль введено неправильно.</p>
-        ) : (
-          ''
-        )}
+        {passwordError && nameError ? <p style={{ color: 'red' }}>{t('InputError')}</p> : ''}
         <TextField
           error={nameError === false ? false : true}
           id="outlined-controlled"
