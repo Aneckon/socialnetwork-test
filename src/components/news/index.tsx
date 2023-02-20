@@ -33,26 +33,36 @@ export const News = () => {
     <Container sx={{ textAlign: 'center' }} maxWidth="xl">
       <h1 style={{ textAlign: 'left' }}>{t('News')}</h1>
 
-      <Grid sx={{ mb: 5, textAlign: 'left' }} container spacing={2}>
+      <Grid sx={{ mb: 5, textAlign: 'left' }} container>
         {loading ? (
-          postList.map((item: { id: number; title: string; body: string }) => (
-            <Grid key={item.id} item xl={3}>
-              <Post title={item.title} body={item.body} id={item.id} />
+          postList.length ? (
+            postList.map((item: { id: number; title: string; body: string }) => (
+              <Grid sx={{ mb: 2 }} key={item.id} item xl={3}>
+                <Post title={item.title} body={item.body} id={item.id} />
+              </Grid>
+            ))
+          ) : (
+            <Grid sx={{ mb: 5 }} container>
+              <Grid item xl={12}>
+                <h2 style={{ textAlign: 'center' }}>Пусто</h2>
+              </Grid>
             </Grid>
-          ))
+          )
         ) : (
           <p>{t('Loading')}...</p>
         )}
       </Grid>
-      <Button
-        onClick={() => {
-          useLoadingPost(loadingPost + 10);
-        }}
-        sx={{ mb: 5 }}
-        variant="outlined"
-        color="error">
-        {t('ButtonLoading')}
-      </Button>
+      {loading && (
+        <Button
+          onClick={() => {
+            useLoadingPost(loadingPost + 10);
+          }}
+          sx={{ mb: 5 }}
+          variant="outlined"
+          color="error">
+          {t('ButtonLoading')}
+        </Button>
+      )}
     </Container>
   );
 };
