@@ -40,7 +40,7 @@ export const Login = () => {
       const user = name + password;
       localStorage.setItem('user', user);
       navigate('/profile');
-      toast.success('You have entered successfully', {
+      toast.success(t('ToastLogin'), {
         position: 'top-right',
         autoClose: 5000,
         hideProgressBar: false,

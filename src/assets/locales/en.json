@@ -12,6 +12,8 @@
   "UserName": "UserName",
   "Password": "Password",
   "ToastLogout": "Successfully exited",
+  "ToastLogin": "You have entered successfully",
   "ToastDeletePostSuccessfully": "Deleted successfully",
-  "ToastDeletePostError": "To delete, you need to log in to your account"
+  "ToastDeletePostError": "To delete, you need to log in to your account",
+  "InputError": "Username or password entered incorrectly."
 }

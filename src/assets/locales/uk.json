@@ -12,6 +12,8 @@
   "UserName": "Нікнейм",
   "Password": "Пароль",
   "ToastLogout": "Успішно вийшли",
+  "ToastLogin": "Успішно увійшли",
   "ToastDeletePostSuccessfully": "Успішно видалено",
-  "ToastDeletePostError": "Щоб видалити, треба зайти в акаунт"
+  "ToastDeletePostError": "Щоб видалити, треба зайти в акаунт",
+  "InputError": "Ім'я користувача або пароль введено неправильно."
 }
