@@ -33,11 +33,11 @@ export const News = () => {
     <Container sx={{ textAlign: 'center' }} maxWidth="xl">
       <h1 style={{ textAlign: 'left' }}>{t('News')}</h1>
 
-      <Grid sx={{ mb: 5, textAlign: 'left' }} container>
+      <Grid sx={{ mb: 5, textAlign: 'left' }} spacing={2} container columns={12}>
         {loading ? (
           postList.length ? (
             postList.map((item: { id: number; title: string; body: string }) => (
-              <Grid sx={{ mb: 2 }} key={item.id} item xl={3}>
+              <Grid key={item.id} item xs={12} sm={6} md={4} xl={3}>
                 <Post title={item.title} body={item.body} id={item.id} />
               </Grid>
             ))
